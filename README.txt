@@ -8,3 +8,5 @@ Pre-Alpha version of the beer ontology.
  - Include descriptions and comments for humans :)
  - Populate the ontology :s
  - Connect the ontology with other ontologies (LOD)
+ - Choose a valid url for the ontology (LOD)
+ 
