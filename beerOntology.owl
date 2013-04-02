@@ -1,0 +1,796 @@
+<?xml version="1.0"?>
+
+
+<!DOCTYPE Ontology [
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+    <!ENTITY xml "http://www.w3.org/XML/1998/namespace" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+]>
+
+
+<Ontology xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://www.semanticweb.org/toporniz/ontologies/2013/2/beer"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     ontologyIRI="http://www.semanticweb.org/toporniz/ontologies/2013/2/beer">
+    <Prefix name="" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Pre-alpha version of the beer ontology</Literal>
+    </Annotation>
+    <Declaration>
+        <Class IRI="#Amber_Hybrid_Beer"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#American_Ale"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#American_Amber_Ale"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#American_Barleywine"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#American_Brown_Ale"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#American_IPA"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#American_Pale_Ale"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#American_Stout"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#American_Wheat_or_Rye_Beer"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Award"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Baltic_Porter"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Beer"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Belgian_And_French_Ale"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Belgian_Blond_Ale"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Belgian_Dark_Strong_Ale"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Belgian_Dubbel"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Belgian_Golden_Strong_Ale"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Belgian_Pale_Ale"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Belgian_Specialty_Ale"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Belgian_Strong_Ale"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Belgian_Tripel"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Berliner_Weisse"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Bière_de_Garde"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Blonde_Ale"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Bock"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Bohemian_Pilsener"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Brewery"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Brown_Porter"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#California_Common_Beer"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Classic_American_Pilsner"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Classic_Rauchbier"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Cream_Ale"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Dark_American_Lager"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Dark_Lager"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Doppelbock"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Dortmunder_Export"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Dry_Stout"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Dunkelweizen"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Düsseldorf_Altbier"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Eisbock"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#English_Barleywine"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#English_Brown_Ale"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#English_IPA"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#English_Pale_Ale"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#European_Amber_Lager"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Flanders_Red_Ale"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Foreign_Extra_Stout"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Fruit_Beer"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Fruit_Lambic"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#German_Pilsner"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#German_Wheat_and_Rye_Beer"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Gueuze"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Imperial_IPA"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Indian_Pale_Ale"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Irish_Red_Ale"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Kölsch"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Light_Hybrid_Beer"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Light_Lager"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Lite_American_Lager"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Maibock"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Mild"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Munich_Dunkel"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Munich_Helles"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Northern_English_Brown"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Northern_German_Altbier"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Oatmeal_Stout"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Oktoberfest"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Old_Ale"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Ordinary_Bitter"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Other_Smoked_Beer"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Oud_Bruin"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Pilsner"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Porter"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Premium_American_Lager"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Premium_Bitter"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Robust_Porter"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Roggenbier"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Russian_Imperial_Stout"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Saison"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Schwarzbier"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Scottish_And_Irish_Ale"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Scottish_Export_80"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Scottish_Heavy"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Scottish_Light"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Smoke-Flavored_and_Wood-Aged_Beer"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Sour_Ale"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Southern_English_Brown"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#SpecialtyBeer"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Spice_Herb_Vegetable_Beer"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Standard_American_Lager"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Stout"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Straight_Lambic"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Strong_Ale"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Strong_Bitter"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Strong_Scotch_Ale"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Sweet_Stout"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Traditional_Bock"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Vegetable_Beer"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Vienna_Lager"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Weissbier"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Weizenbock"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Winter_Specialty_Spiced_Beer"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Witbier"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Wood-Aged_Beer"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#awarded"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#brewedBy"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#alcoholContent"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#awardedYear"/>
+    </Declaration>
+    <SubClassOf>
+        <Class IRI="#Amber_Hybrid_Beer"/>
+        <Class IRI="#Beer"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#American_Ale"/>
+        <Class IRI="#Beer"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#American_Amber_Ale"/>
+        <Class IRI="#American_Ale"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#American_Barleywine"/>
+        <Class IRI="#Strong_Ale"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#American_Brown_Ale"/>
+        <Class IRI="#American_Ale"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#American_IPA"/>
+        <Class IRI="#Indian_Pale_Ale"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#American_Pale_Ale"/>
+        <Class IRI="#American_Ale"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#American_Stout"/>
+        <Class IRI="#Stout"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#American_Wheat_or_Rye_Beer"/>
+        <Class IRI="#Light_Hybrid_Beer"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Baltic_Porter"/>
+        <Class IRI="#Porter"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Belgian_And_French_Ale"/>
+        <Class IRI="#Beer"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Belgian_Blond_Ale"/>
+        <Class IRI="#Belgian_Strong_Ale"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Belgian_Dark_Strong_Ale"/>
+        <Class IRI="#Belgian_Strong_Ale"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Belgian_Dubbel"/>
+        <Class IRI="#Belgian_Strong_Ale"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Belgian_Golden_Strong_Ale"/>
+        <Class IRI="#Belgian_Strong_Ale"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Belgian_Pale_Ale"/>
+        <Class IRI="#Belgian_And_French_Ale"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Belgian_Specialty_Ale"/>
+        <Class IRI="#Belgian_And_French_Ale"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Belgian_Strong_Ale"/>
+        <Class IRI="#Beer"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Belgian_Tripel"/>
+        <Class IRI="#Belgian_Strong_Ale"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Berliner_Weisse"/>
+        <Class IRI="#Sour_Ale"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Bière_de_Garde"/>
+        <Class IRI="#Belgian_And_French_Ale"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Blonde_Ale"/>
+        <Class IRI="#Light_Hybrid_Beer"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Bock"/>
+        <Class IRI="#Beer"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Bohemian_Pilsener"/>
+        <Class IRI="#Pilsner"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Brown_Porter"/>
+        <Class IRI="#Porter"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#California_Common_Beer"/>
+        <Class IRI="#Amber_Hybrid_Beer"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Classic_American_Pilsner"/>
+        <Class IRI="#Pilsner"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Classic_Rauchbier"/>
+        <Class IRI="#Smoke-Flavored_and_Wood-Aged_Beer"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Cream_Ale"/>
+        <Class IRI="#Light_Hybrid_Beer"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Dark_American_Lager"/>
+        <Class IRI="#Dark_Lager"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Dark_Lager"/>
+        <Class IRI="#Beer"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Doppelbock"/>
+        <Class IRI="#Bock"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Dortmunder_Export"/>
+        <Class IRI="#Light_Lager"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Dry_Stout"/>
+        <Class IRI="#Stout"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Dunkelweizen"/>
+        <Class IRI="#German_Wheat_and_Rye_Beer"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Düsseldorf_Altbier"/>
+        <Class IRI="#Amber_Hybrid_Beer"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Eisbock"/>
+        <Class IRI="#Bock"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#English_Barleywine"/>
+        <Class IRI="#Strong_Ale"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#English_Brown_Ale"/>
+        <Class IRI="#Beer"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#English_IPA"/>
+        <Class IRI="#Indian_Pale_Ale"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#English_Pale_Ale"/>
+        <Class IRI="#Beer"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#European_Amber_Lager"/>
+        <Class IRI="#Beer"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Flanders_Red_Ale"/>
+        <Class IRI="#Sour_Ale"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Foreign_Extra_Stout"/>
+        <Class IRI="#Stout"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Fruit_Beer"/>
+        <Class IRI="#Beer"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Fruit_Lambic"/>
+        <Class IRI="#Sour_Ale"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#German_Pilsner"/>
+        <Class IRI="#Pilsner"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#German_Wheat_and_Rye_Beer"/>
+        <Class IRI="#Beer"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Gueuze"/>
+        <Class IRI="#Sour_Ale"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Imperial_IPA"/>
+        <Class IRI="#Indian_Pale_Ale"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Indian_Pale_Ale"/>
+        <Class IRI="#Beer"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Irish_Red_Ale"/>
+        <Class IRI="#Scottish_And_Irish_Ale"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Kölsch"/>
+        <Class IRI="#Light_Hybrid_Beer"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Light_Hybrid_Beer"/>
+        <Class IRI="#Beer"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Light_Lager"/>
+        <Class IRI="#Beer"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Lite_American_Lager"/>
+        <Class IRI="#Light_Lager"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Maibock"/>
+        <Class IRI="#Bock"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Mild"/>
+        <Class IRI="#English_Brown_Ale"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Munich_Dunkel"/>
+        <Class IRI="#Dark_Lager"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Munich_Helles"/>
+        <Class IRI="#Light_Lager"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Northern_English_Brown"/>
+        <Class IRI="#English_Brown_Ale"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Northern_German_Altbier"/>
+        <Class IRI="#Amber_Hybrid_Beer"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Oatmeal_Stout"/>
+        <Class IRI="#Stout"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Oktoberfest"/>
+        <Class IRI="#European_Amber_Lager"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Old_Ale"/>
+        <Class IRI="#Strong_Ale"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Ordinary_Bitter"/>
+        <Class IRI="#English_Pale_Ale"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Other_Smoked_Beer"/>
+        <Class IRI="#Smoke-Flavored_and_Wood-Aged_Beer"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Oud_Bruin"/>
+        <Class IRI="#Sour_Ale"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Pilsner"/>
+        <Class IRI="#Beer"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Porter"/>
+        <Class IRI="#Beer"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Premium_American_Lager"/>
+        <Class IRI="#Light_Lager"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Premium_Bitter"/>
+        <Class IRI="#English_Pale_Ale"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Robust_Porter"/>
+        <Class IRI="#Porter"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Roggenbier"/>
+        <Class IRI="#German_Wheat_and_Rye_Beer"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Russian_Imperial_Stout"/>
+        <Class IRI="#Stout"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Saison"/>
+        <Class IRI="#Belgian_And_French_Ale"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Schwarzbier"/>
+        <Class IRI="#Dark_Lager"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Scottish_And_Irish_Ale"/>
+        <Class IRI="#Beer"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Scottish_Export_80"/>
+        <Class IRI="#Scottish_And_Irish_Ale"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Scottish_Heavy"/>
+        <Class IRI="#Scottish_And_Irish_Ale"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Scottish_Light"/>
+        <Class IRI="#Scottish_And_Irish_Ale"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Smoke-Flavored_and_Wood-Aged_Beer"/>
+        <Class IRI="#Beer"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Sour_Ale"/>
+        <Class IRI="#Beer"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Southern_English_Brown"/>
+        <Class IRI="#English_Brown_Ale"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SpecialtyBeer"/>
+        <Class IRI="#Beer"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Spice_Herb_Vegetable_Beer"/>
+        <Class IRI="#Beer"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Standard_American_Lager"/>
+        <Class IRI="#Light_Lager"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Stout"/>
+        <Class IRI="#Beer"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Straight_Lambic"/>
+        <Class IRI="#Sour_Ale"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Strong_Ale"/>
+        <Class IRI="#Beer"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Strong_Bitter"/>
+        <Class IRI="#English_Pale_Ale"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Strong_Scotch_Ale"/>
+        <Class IRI="#Scottish_And_Irish_Ale"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Sweet_Stout"/>
+        <Class IRI="#Stout"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Traditional_Bock"/>
+        <Class IRI="#Bock"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Vegetable_Beer"/>
+        <Class IRI="#Spice_Herb_Vegetable_Beer"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Vienna_Lager"/>
+        <Class IRI="#European_Amber_Lager"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Weissbier"/>
+        <Class IRI="#German_Wheat_and_Rye_Beer"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Weizenbock"/>
+        <Class IRI="#German_Wheat_and_Rye_Beer"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Winter_Specialty_Spiced_Beer"/>
+        <Class IRI="#Spice_Herb_Vegetable_Beer"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Witbier"/>
+        <Class IRI="#Belgian_And_French_Ale"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Wood-Aged_Beer"/>
+        <Class IRI="#Smoke-Flavored_and_Wood-Aged_Beer"/>
+    </SubClassOf>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#awarded"/>
+        <ObjectUnionOf>
+            <Class IRI="#Beer"/>
+            <Class IRI="#Brewery"/>
+        </ObjectUnionOf>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#brewedBy"/>
+        <Class IRI="#Beer"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#awarded"/>
+        <Class IRI="#Award"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#brewedBy"/>
+        <Class IRI="#Brewery"/>
+    </ObjectPropertyRange>
+    <DataPropertyDomain>
+        <DataProperty IRI="#alcoholContent"/>
+        <Class IRI="#Beer"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#awardedYear"/>
+        <Class IRI="#Award"/>
+    </DataPropertyDomain>
+    <DataPropertyRange>
+        <DataProperty IRI="#alcoholContent"/>
+        <Datatype abbreviatedIRI="xsd:decimal"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#awardedYear"/>
+        <Datatype abbreviatedIRI="xsd:int"/>
+    </DataPropertyRange>
+</Ontology>
+
+
+
+<!-- Generated by the OWL API (version 3.3.1957) http://owlapi.sourceforge.net -->
+
