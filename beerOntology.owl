@@ -22,8 +22,20 @@
     <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
     <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
     <Annotation>
+        <AnnotationProperty abbreviatedIRI="rdfs:seeAlso"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">http://www.cs.umd.edu/projects/plus/SHOE/onts/beer1.0.html</Literal>
+    </Annotation>
+    <Annotation>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <Literal datatypeIRI="&rdf;PlainLiteral">Pre-alpha version of the beer ontology</Literal>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">This ontology is based on the SHOE model developed by Jeff Heflin.</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="owl:versionInfo"/>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Pre-Alpha</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="rdfs:seeAlso"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">http://www.w3.org/2011/12/beer.owl</Literal>
     </Annotation>
     <Declaration>
         <Class IRI="#Amber_Hybrid_Beer"/>
