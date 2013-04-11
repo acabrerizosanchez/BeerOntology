@@ -356,7 +356,13 @@
         <ObjectProperty IRI="#brewedBy"/>
     </Declaration>
     <Declaration>
+        <ObjectProperty IRI="#brews"/>
+    </Declaration>
+    <Declaration>
         <DataProperty IRI="#alcoholContent"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#awardCategory"/>
     </Declaration>
     <Declaration>
         <DataProperty IRI="#awardedYear"/>
@@ -765,6 +771,10 @@
         <Class IRI="#Wood-Aged_Beer"/>
         <Class IRI="#Smoke-Flavored_and_Wood-Aged_Beer"/>
     </SubClassOf>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#brews"/>
+        <ObjectProperty IRI="#brewedBy"/>
+    </InverseObjectProperties>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="#awarded"/>
         <ObjectUnionOf>
@@ -776,6 +786,10 @@
         <ObjectProperty IRI="#brewedBy"/>
         <Class IRI="#Beer"/>
     </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#brews"/>
+        <Class IRI="#Brewery"/>
+    </ObjectPropertyDomain>
     <ObjectPropertyRange>
         <ObjectProperty IRI="#awarded"/>
         <Class IRI="#Award"/>
@@ -784,9 +798,17 @@
         <ObjectProperty IRI="#brewedBy"/>
         <Class IRI="#Brewery"/>
     </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#brews"/>
+        <Class IRI="#Beer"/>
+    </ObjectPropertyRange>
     <DataPropertyDomain>
         <DataProperty IRI="#alcoholContent"/>
         <Class IRI="#Beer"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#awardCategory"/>
+        <Class IRI="#Award"/>
     </DataPropertyDomain>
     <DataPropertyDomain>
         <DataProperty IRI="#awardedYear"/>
@@ -797,9 +819,28 @@
         <Datatype abbreviatedIRI="xsd:decimal"/>
     </DataPropertyRange>
     <DataPropertyRange>
+        <DataProperty IRI="#awardCategory"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
         <DataProperty IRI="#awardedYear"/>
         <Datatype abbreviatedIRI="xsd:int"/>
     </DataPropertyRange>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#awardCategory</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">It was decided to use a data property to model awardCategory because every contest models its own categories, and they dont need to be the same as de ones defined in the ontology.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:seeAlso"/>
+        <IRI>#awardCategory</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">http://www.worldbeerawards.com/judging</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:seeAlso"/>
+        <IRI>#awardCategory</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">http://www.worldbeercup.org/about/judging</Literal>
+    </AnnotationAssertion>
 </Ontology>
 
 
